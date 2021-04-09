@@ -1,13 +1,139 @@
 1: The ABC of Programming
+
 2: Basic JavaScript Instructions
+    
 3: Functions, Methods & Objects
+
 4: Decisions & Loops
-5: Document Object Model
+
+5: Document Object Model ( DOM )
+           1) Select An Individual Element Node
+            -getElementById()
+            -querySelector()
+
+           2) Select Multiple Elements (Nodelists)
+            -getElementsByClassName()
+            -getElementsByTagName()
+            -querySelectorAll()
+            
+           3) Traversing Between Element Nodes
+            -parentNode
+            -previousSibling/nextSibling
+            -firstChild / lastChild
+
+           4) Access & Update a text node by 
+            -nodeValue()
+            -textContent()
+            -innerText
+            -innerHTML
+           5) Adding Elements using DOM manipulations
+            -createElement()
+            -CreateTextNode()
+            -appendChild()
+           6) Removing element from the DOM tree
+            -removeChild()
+
+           7) Attribute Nodes
+            -getAttribute()
+            -hasAttribute()
+            -setAttribute()
+            -removeAttriute()
+
+
 6: Events
+
+UIEVENTS   Occur when a user interacts with the browser's user interface (UI) rather than the web page 
+
+EVENT 			DESCRIPTION 
+
+load 			Web page has finished loading 
+unload			Web page is unloading (usually because a new page was requested) 
+error 			Browser encounters a JavaScript error or an asset doesn't exist 
+resize 			Browser window has been resized 
+scroll 			User has scrolled up or down the page 
+
+
+
+KEYBOARD EVENTS   Occur when a user interacts with the keyboard (see also input event) 
+
+EVENT 			DESCRIPTION 
+
+keydown 		User first presses a key (repeats while key is depressed) 
+keyup 			User releases a key 
+keypress 		Character is being inserted (repeats while key is depressed) 
+
+
+
+
+MOUSE EVENTS     Occur when a user interacts with a mouse. trackpad, or touchscreen 
+
+EVENT 			DESCRIPTION 
+
+click 			User presses and releases a button over the same element 
+dbl 			click User presses and releases a button twice over the same element 
+mousedown 		User presses a mouse button while over an element 
+mouseup 		User releases a mouse button while over an element 
+mousemove 		User moves the mouse (not on a touchscreen) 
+mouseover 		User moves the mouse over an element (not on a touchscreen) 
+mouseout 		User moves the mouse off an element (not on a touchscreen) 
+
+
+
+FOCUS EVENTS   Occur when an element (e.g., a link or form field) gains or loses focus 
+
+EVENT 			    DESCRIPTION 
+focus / focus in	Element gains focus 
+blur / focusout		Element loses focus 
+
+
+
+
+
+ 
+FORM EVENTS 		Occur when a user interacts with a form element 
+
+EVENT 			DESCRIPTION
+
+input 			Value in any <input> or <textarea> element has changed (IE9+) or any element with the contented i table attribute 
+change 			Value in select box, checkbox, or radio button changes (IE9+) 
+submit 			User submits a form (using a button or a key) 
+reset 			User clicks on a form's res~t button (rarely used these days) 
+cut 			User cuts content from a form field 
+copy 			User copies content from a form field 
+paste 			User pastes content into a form field 
+selec           User selects some text in a form field
+
+
+
+MUTATION EVENTS* 	Occur when the DOM structure has been changed by a script  *To be replaced by mutation observers (see p284) 
+	
+EVENT 				DESCRIPTION 
+
+DOMSubtreeModified 		    Change has been made to document
+DOMNodelnserted 		    Node has been inserted as a direct child of another node
+DOMNodeRemoved 			    Node has been removed from another node 
+OOMNodelnsertedlntoDocument Node has been inserted as a descendant of another node 
+DOMNodeRemovedFromOocument 	Node has been removed as a descendant of another node 
+
+
+
+
+
+
+
+
+         
+
 7: jQuery
+
 8: Ajax & JSON
+
 9: APIs
+
 10: Error Handling & debugging
+
 11: Content Panels
+
 12: Filtering, Searching & Sorting
+
 13: Form Enhancement & Validation
