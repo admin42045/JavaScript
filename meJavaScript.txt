@@ -8,36 +8,43 @@
 
 5: Document Object Model ( DOM )
            1) Select An Individual Element Node
-            -getElementById()
-            -querySelector()
+            -getElementById() -select element based on id
+            -querySelector() -use css selector eg.[li.hot]
 
            2) Select Multiple Elements (Nodelists)
-            -getElementsByClassName()
-            -getElementsByTagName()
-            -querySelectorAll()
+            -getElementsByClassName() -select element  based on className
+            -getElementsByTagName()  -select element based on tagName eg.[li]
+            -querySelectorAll() - use css selector eg.[li.hot]
             
            3) Traversing Between Element Nodes
-            -parentNode
-            -previousSibling/nextSibling
-            -firstChild / lastChild
+            -parentNode    - this propeties find the element node for containing element in the html
+            -previousSibling/nextSibling  -these properties find the prev and next element  sibling of a node 
+            -firstChild / lastChild  -these properties find the first or last child of the current element
 
            4) Access & Update a text node by 
-            -nodeValue()
-            -textContent()
-            -innerText
-            -innerHTML
-           5) Adding Elements using DOM manipulations
-            -createElement()
-            -CreateTextNode()
-            -appendChild()
-           6) Removing element from the DOM tree
-            -removeChild()
+            -nodeValue() - Accessing text from node
+            -textContent() -Gets /Sets text only
+            -innerText  -Get/sets text only
+            -innerHTML -Gets/Sets text & markup
 
+           5) Adding Elements using DOM manipulations
+            -createElement()  - create the element & this element node stored in variable
+            -CreateTextNode() - create a new text node, after createElement() method , store in variable
+            -appendChild() - add it to the DOM 
+
+           6) Removing element from the DOM tree
+            -removeChild() - remove the element into the DOM tree
+
+           
            7) Attribute Nodes
-            -getAttribute()
-            -hasAttribute()
-            -setAttribute()
-            -removeAttriute()
+            -getAttribute() -gets the value of an attribute
+            -hasAttribute() -check if element node has a specified attribute
+            -setAttribute() - sets the value of an attribute
+            -removeAttriute() -removes an attribute from an element node
+
+           8) document.write() -object document write() method  a single way to add conent that was not in the original source code  to the page,but it's use is rarely advised
+
+
 
 
 6: Events
