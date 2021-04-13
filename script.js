@@ -240,11 +240,3 @@ document.getElementById("demo").innerHTML = modu( 7 , 23);
 document.getElementById("demo").innerHTML = Date();
 
 
-
-
-
-
-
-
-
-

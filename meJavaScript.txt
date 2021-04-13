@@ -14,7 +14,7 @@
            2) Select Multiple Elements (Nodelists)
             -getElementsByClassName() -select element  based on className
             -getElementsByTagName()  -select element based on tagName eg.[li]
-            -querySelectorAll() - use css selector eg.[li.hot]
+            -querySelectorAll() - use css selector eg.('li[id]');
             
            3) Traversing Between Element Nodes
             -parentNode    - this propeties find the element node for containing element in the html
@@ -69,9 +69,7 @@ keydown 		User first presses a key (repeats while key is depressed)
 keyup 			User releases a key 
 keypress 		Character is being inserted (repeats while key is depressed) 
 
-
-
-
+ 
 MOUSE EVENTS     Occur when a user interacts with a mouse. trackpad, or touchscreen 
 
 EVENT 			DESCRIPTION 
