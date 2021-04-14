@@ -230,7 +230,6 @@ el.className ='cool';
 
 selectId();
 
- */
 
 function addED()
 {
@@ -271,6 +270,26 @@ function removeElFun()
 
 removeElFun();
 
+
+
+ */
+
+
+
+// Get first list item
+var el=document.getElementById('one');
+
+
+
+if(el.hasAttribute('class')){
+// get the class attribute 
+var attr=el.getAttribute('class');
+
+// Add the value of the attribute after the list
+
+
+
+}
 
 
 
