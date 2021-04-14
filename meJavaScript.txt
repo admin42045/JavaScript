@@ -42,7 +42,7 @@
             -setAttribute() - sets the value of an attribute
             -removeAttriute() -removes an attribute from an element node
 
-           8) document.write() -object document write() method  a single way to add conent that was not in the original source code  to the page,but it's use is rarely advised
+           8) document.write() -object document write() method  a single way to add content that was not in the original source code  to the page,but it's use is rarely advised
 
 
 
@@ -108,6 +108,18 @@ copy 			User copies content from a form field
 paste 			User pastes content into a form field 
 selec           User selects some text in a form field
 
+The Event Object 
+
+PROPERTY        IES-8 EQUIVALENT        PURPOSE    
+target          srcElement              The target of the event (most specific element interacted with)
+type            type                    Type of event that was fired 
+cancelable      not supported           Whether you.can cancel the default behavior of an element 
+
+
+METHOD              IES-8 EQUIVALENT PURPOSE 
+                    PROPERTY
+preventOefault()    returnValue     Cancel default behavior of the event (if it can be canceled) 
+stopPropagation()   cancelBubble    Stops the event from bubbling or capturing any further 
 
 
 MUTATION EVENTS* 	Occur when the DOM structure has been changed by a script  *To be replaced by mutation observers (see p284) 

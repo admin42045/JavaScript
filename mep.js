@@ -206,7 +206,85 @@ elText=elText.replace('honey', 'Fresh Figs');
 el.firstChild.nodeValue=elText;
 
 
+
+
+// find the first list item
+var firstItem=document.getElementById('one');
+// get value of textContent
+var firstTextContent=firstItem.textContent;
+
+// get value of innner text
+var firstinnerText =firstItem.innerText;
+
+// 
+
+
+
+function selectId(){
+// select an individaual element and store into  a vaiable
+var el =document.getElementById('one');
+
+// change the value of class attribute
+el.className ='cool';
+}
+
+selectId();
+
  */
+
+function addED()
+{
+    // create a new element and store it in a variable
+    var el=document.createElement('li');
+    // create a text node and store it in a variable
+    var elText=document.createTextNode('node text by nitin');
+    //attached a new text node 
+    el.appendChild(elText);
+
+    // find the position where the new element should be added.
+    var position=document.getElementsByTagName('ul')[0];
+
+    // insert the new element into its position
+    position.appendChild(el);
+
+
+}
+
+addED();
+
+
+
+
+function removeElFun()
+{
+    // select the element which we want to remove and store  into the variable
+    var removeEl=document.getElementsByTagName('li')[4];
+
+    // Its containg element or root 
+    var cEl=removeEl.parentNode;
+
+    // removing the element
+    cEl.removeChild(removeEl);
+
+
+}
+
+removeElFun();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
