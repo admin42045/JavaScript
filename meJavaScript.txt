@@ -143,6 +143,293 @@ DOMNodeRemovedFromOocument 	Node has been removed as a descendant of another nod
 
 7: jQuery
 
+.ready()
+.html()
+.text()
+.append()
+
+.replaceWith()
+.remove()
+
+Inserting Elements 
+.before()
+.after()
+.prepend()
+.append()
+
+
+Getting And Setting Attribute Values
+.attr()
+.removeattr()
+.addClass()
+.removeClass()
+
+Getting And Setting Css Properties and Change CSS rules
+.css()
+
+Working with each element in a selcetion
+.each()
+this or $(this)
+
+Event Methods
+.on()
+
+JQUERY EVENTS 
+UI 		focus , blur, change
+KEYBOARD 	input, keydown, keyup, keypress
+MOUSE           click, dblclick, mouseup, mousedown,
+			mouseover, mousemove, mouseout, hover*
+FORM		submit, select, change
+DOCUMENT 	ready* , load, unload*
+BROWSER 	error, resize , scro 11
+
+
+The Event Object
+
+PROPERTY
+type		Type of event, (e.g., click, mouseover) 
+which		Button or key that was pressed
+data		An object literal containing extra information
+			passed to the function when the event fires
+		(See right-hand page for an example)
+target		DOM element that initiated the event
+pageX		Mouse position from left edge of viewport	
+pageY		Mouse position from top of viewport
+timeStamp	Number of milliseconds from Jan 1st, 1970,
+ 		to when the event was triggered (this is known
+		as Unix Time). Does not work in Firefox.
+
+METHOD 				DESCRIPTION
+• preventOefau1t() 		Prevents the default (e.g., submitting a form)
+• stopPropagation() 		Stops the event bubbling up to ancestors
+
+
+EFFECTS
+BASIC EFFECTS
+METHOD			DESCRIPTION
+. show () 		Displays selected elements
+.hide() 		Hides selected elements
+. togg1e() 		Toggles between showing and hiding selected elements
+
+FADING EFFECTS
+METHOD 			DESCRIPTION
+. fadeln() 		Fades in selected elements making them opaque
+. fadeout()		Fades out selected elements making them transparent
+. fade To() 		Changes opacity of selected elements
+. fade Togg1e() 	Hides or shows selected elements by changing their
+			opacity (the opposite of their current state) 
+
+
+SLIDING EFFECTS
+METHOD 			DESCRIPTION
+.slideUp () 	Shows selected elements with a sliding motion
+.s1ide Down() 	Hides selected elements with a sliding motion
+.s1ideToggle() 	Hides or shows selected elements with a sliding
+			motion (in the opposite direction to its current state)
+CUSTOM EFFECTS
+METHOD 			DESCRIPTION
+.delay() 		Delays execution of subsequent items in queue
+.stop() 		Stops an animation if it is currently running
+.animate() 		Creates custom animations (see p334)
+
+
+TRAVERSING THE DOM 
+SELECTOR REQUIRED
+METHOD 			DESCRIPTION
+•find() 		All elements within current selection that match selector
+.closest() 		Nearest ancestor (not just parent) that matches selector 
+
+SELECTOR OPTIONAL
+METHOD 			DESCRIPTION
+.parent() 		Direct parent of current selection
+.parents() 		All parents of current selection
+.children() 		All children of cur.rent selection
+. siblings() 		All siblings of current selection
+. next() 		Next sibling of current element
+. nextAll () 		All subsequent siblings of current element
+.prev() 		Previous sibling of current element
+.prevAll () 		All previous siblings of current element
+
+
+ADD & FILTER ELEMENTS IN A SELECTION 
+ADDING ELEMENTS TO A SELECTION
+METHOD 			DESCRIPTION
+.add()			Selects all elements that contain the text specified
+			(parameter is case sensitive)
+			
+			
+FILTERING W ITH A SECOND SELECTOR
+METHOD / SELECTOR 	DESCRIPTION
+. fi1ter() 		Finds elements in matched that in turn match a second 				selector
+. find()		Finds descendants of elements in matched set
+			that match the selector
+. not() / : not ()      Finds elements that do not match the selector
+. has() / :has()	Finds elements from the matched set that
+			have a descendant that matches the selector 
+
+: contains()		Selects all elements that contain the text
+                         specified (parameter is case sensitive)
+	
+			
+TESTING CONTENT
+METHOD 		DESCRIPTION
+. ; s ()	 Checks whether current selection matches a condition
+		(returns Boolean)
+
+
+FINDING ITEMS BY ORDER 
+FINDING ELEMENTS BY INDEX NUMBER
+METHOD/ SELECTOR 	DESCRIPTION
+. eq () 		The element that matches the index number 
+: l t ()		 Elements with an index less than the number
+			specified
+:gt()                   Elements with an index greater than the
+                          number specified 
+
+
+SELECTING FORM ELEMENTS
+SELECTORS FOR FORM ELEMENTS
+SELECTOR		 DESCRIPTION
+:button 		<button> and <input> elements whose type attribute has
+			a value of button
+			
+:checkbox 		<input> elements whose type attribute has a value of
+			checkbox. Note that you get better performance with
+			$('(type="checkbox"]')
+			
+:checked 		Checked elements from checkboxes and radio buttons
+			(see : selected for select boxes)
+			
+:disabled 		All elements that have been disabled
+:enabled		All elements that are enabled
+: focus			Element that currently has focus. Note that you get better
+			performance with$ (document. acti veEl ement)		
+
+
+: file 			All elements that are file inputs
+: image			All image inputs. Note that you get better performance
+			using (type=11 image"]
+			
+: input			All <button>, <input>. <select>, and <texta rea>
+			elements. Note that you get better performance from
+			selecting elements, then using • filter ( 11 : input 11 )
+
+: password		All password inputs. Note that you get better performance
+				using$ ('input: password')
+				
+: radio			All radio inputs. To select a group of radio buttons, you can
+			use$(' input (name="gender"] : radio')
+			
+:reset			All inputs that are reset buttons
+
+: selected		 All elements that are selected. Note that you get better
+			performance using a CSS selector inside the • filter()
+			method, e.g .. . filter(": selected")
+: submit		<button> and <input> elements whose type attribute
+			has a value of submit. Note that you will get better
+			performance using (type=" submit"]
+: text 			Selects <input> elements with a type attribute whose
+			value is text, or whose type attribute is not present. You
+			will likely get better performance from ('input: text')
+
+
+FORM METHODS & EVENTS
+RETRIEVE THE VALUE OF ELEMENTS
+METHOD 			DESCRIPTION
+. va 1 () 		Primarily used with <input>, <se 1 ect>, and <text area>
+			elements. It can be used to get the value of the first element
+			in a matched set, or update the value of all of them. 
+
+OTHER METHODS
+METHOD           	DESCRIPTION
+.filter()		Used to filter a jQuery selection using a second
+                        selector (especially form-specific filters)
+			
+.is()			Often used with filters to check whether a form input is
+   			selected/checked	
+
+$.isNumeric() 		Checks whether the value represents a numeric value
+			and returns a Boolean. It returns true for the following:
+			$.isNumeric(l) $.isNumeric(-3)
+			$.isNumeric("2") $.isNumeric(4.4)
+			$.isNumeric(+2) $.isNumeric{OxFF) 
+
+EVENTS
+METHOD 			DESCRIPTION
+. on() 			Used to handle all events
+EVENT 			DESCRIPTION
+blur 			When an element loses focus
+change 			When the value of an input changes
+focus 			When an element gains focus
+select 			When the option for a <se 1 ect> element is changed
+submit 			When a form is submitted 
+
+
+CUTTING & COPYING ELEMENTS
+
+CUT
+METHOD 			DESCRIPTION
+.remove() 		Removes matched elements from DOM tree (including any
+			descendants and text nodes)
+.detach () 		Same as . remove () but keeps a copy of them in memory
+.empty () 		Removes child nodes and descendants from any elements
+			in matched set
+.unwrap () 		Removes parents of matched set, leaving matched elements
+
+
+COPY
+METHOD 			DESCRIPTION
+.clone() 		Creates a copy of the matched set (including any
+			descendants and text nodes) 
+
+
+BOX DIMENSIONS
+RETRIEVE OR SET BOX DIMENSIONS
+METHOD 			DESCRIPTION
+. height()		Height of box (no margin, border, padding)
+.width() 		Width of box (no margin, border, padding) (1)
+			RETRIEVE BOX DIMENSIONS ONLY
+			
+METHOD 			DESCRIPTION
+.innerHeight () 	Height of box plus padding
+.innerWidth () 		Width of box plus padding (2)
+.outerHeight()' 	Height of box plus padding and border
+.outerWidth () 		Width of box plus padding and border (3)
+.outerHeight (true) 	Height of box plus padding, border, and margin
+.outerWidth(true) 	Width of box plus padding, border, and margin (4)
+
+WINDOW & PAGE DIMENSIONS 
+METHOD 			DESCRIPTION
+.height() 		Height of the jQuery selection
+.width()		 Width of the jQuery selection
+. scro11Left() 		Gets the horizontal position of the scroll bar for the first
+			element in the jQuery selection, or sets the horizontal
+			scroll bar position for matched nodes
+.scrollTop()		Gets the vertical position of the scroll bar for the first
+			element in the jQuery selection, or sets the vertical
+			scroll bar position for matched nodes
+
+
+POSITION OF ELEMENTS ON THE PAGE
+METHOD             	DESCRIPTION
+.offset()	  	Gets or sets coordinates of the element relative to the top
+			left-hand corner of the document object (1)
+
+
+.position() 		Gets or sets coordinates of the element relative to any
+			ancestor that has been taken out of normal flow (using
+			CSS box offsets). If no ancestor is out of normal flow, it
+			will return the same as .offset() (2) 
+
+
+
+
+
+
+
+
+
+
 8: Ajax & JSON
 
 9: APIs
