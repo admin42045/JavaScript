@@ -431,8 +431,73 @@ METHOD             	DESCRIPTION
 
 
 8: Ajax & JSON
+JQUERY & AJAX: REQUESTS
+METHOD/ SYNTAX 		DESCRIPTION
+• 1 oad () 		Loads HTML fragments into an element It is the simplest method for                             retrieving data
+
+$.get()			Loads data using the HTTP GET method
+			Used to request data from the server
+			
+$.post()		Loads data using the HTTP POST method
+			Used to send data that updates data on server
+			
+$.getJSON()		Loads JSON data using a GET request
+			Used for JSON data
+			
+$. getScript()	        Loads and executes JavaScript data using GET
+			Used for JavaScript (e.g., JSONP) data	
+			
+$. ajax()		This method is used to perform all requests The above methods all use 			      this under the hood 
+
+
+JQUERY & AJAX: RESPONSES 
+JQXHR PROPERTIES 	DESCRIPTION
+response Text 		Text-based data returned   
+responseXML             XML data returned
+status			Status code 
+status Text		Status description (typically used to display information about an 				error if one occurs)
+
+JQXHR METHODS           DESCRIPTION
+.done()                 Code to run if request was successful
+.fail()			Code to run if request was unsuccessful _
+.always()		Code to run if request succeeded or failed
+.abort()		Halt the communication 
+
+
+JQUERY'S AJAX SHORTHAND METHODS
+
+METHOD/ SYNTAX 					DESCRIPTION
+$.get(urZ [, data][, callback][, type]) 	HTTPGETrequestfordata
+$.post (url [, data] [, callback] [, type]) 	HTTP POST to update data on the server
+$. getJSON(urZ [, data][, callback] ) 		Loads JSON data using a GET request
+$.getScript(urZ [, callback] ) 			Loads and executes JavaScript (e.g., JSONP) 							using a GET request 
+
+AJAX REQUESTS WITH FINE-GRAIN ED CONTROL
+
+
+SETTING 		DESCRIPTION 
+type 			Can take values GET or POST depending on whether the request is made 			      using HTTP GET or POST
+url 			The page the request is being sent to
+data 			The data that is being sent to the server with the request
+success 		A function that runs if the Ajax request completes successfully 			(similar to the • done () method)
+error 			A function that runs if there is an error with the Ajax request 			(similar to the . fa i 1 () method)
+beforeSend 		A function (anonymous or named) that is run before the Ajax 				requeststarts
+complete 		Runs after success/error events	In the example on the right, this 			removes a loading icon
+timeout 		The number of milliseconds to wait before the event should fail 
+
+
+
+
 
 9: APIs
+
+
+API 		DESCRIPTION
+geolocation 	How to tell where the user is located p418
+1oca1Storage 	Store information in the browser (even when user closes tab/window) p420
+sessionStorage  Store information in the browser while a tab/window is open
+history 	How to access items from the browser's history
+
 
 10: Error Handling & debugging
 
